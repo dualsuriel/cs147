@@ -69,7 +69,7 @@ export default class MyStoriesScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Browse Stories</Text>
+        <Text style={styles.title}>My Stories</Text>
         <View style={styles.buttonRow}>
           <TouchableOpacity onPress={this.changeCategory} style={styles.button}>
             <Text style={styles.buttonText}>All</Text>
