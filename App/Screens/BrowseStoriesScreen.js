@@ -35,7 +35,7 @@ export default class BrowseStoriesScreen extends React.Component {
         date:"Oct 10th",
         index: 0,
         imageSets: [Images.kate1,Images.kate2,Images.kate3,Images.kate4],
-        story: ['So overwhelmed this week...','I almost skipped my workout routine because I was too sleepy.','But anyways stay calm, stay strong. And feed the cat (as always)...','I can take care of myself. ']
+        story: ['Thought things have been tough for the past few weeks, but finally we got to sit down together again watching our favorite TV show. Cheers to mom, dad and my brother Brian!','We decided to go out somewhere as we got bored at home.','We went to a park where we could play volleyball. Dad was so good at volleyball. ','I have to say flying kite still ranked as top 1 on my list of family activities.']
       },
       {
         title: 'Feeling Lonely',
