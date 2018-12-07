@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
-
 import Images from '../Themes/Images';
 
 import StoryHeader from '../Components/StoryHeader';
@@ -12,52 +11,32 @@ export default class MyStoriesScreen extends React.Component {
   state = {
     stories: [
       {
-        title: 'Dream Big',
+        title: 'A Good School Day',
         image: Images.school1,
+        date: 'Oct 12',
         color: '#5CBD9B',
         id: 0,
-        pages:4,
-        grade:'7th',
-        date:"Oct 12th",
-        index: 0,
-        imageSets: [Images.me1,Images.me2,Images.me3,Images.me4],
-        story: ['Today in class, we had a discussion about what career we would like to choose in future.','I have always been very interested in the universe, including but limited to planets, star, sun and black hole.','Maybe I could become an astronaut? I do not know, but I will make my best effort.','Dream big!']
       },
       {
-        title: 'Keep My Head Up',
+        title: 'At the Park',
         image: Images.park,
+        date: 'Oct 11',
         color: '#0984E3',
         id: 1,
-        pages:4,
-        grade:'8th',
-        date:"Oct 10th",
-        index: 0,
-        imageSets: [Images.kate1,Images.kate2,Images.kate3,Images.kate4],
-        story: ['Thought things have been tough for the past few weeks, but finally we got to sit down together again watching our favorite TV show. Cheers to mom, dad and my brother Brian!','We decided to go out somewhere as we got bored at home.','We went to a park where we could play volleyball. Dad was so good at volleyball. ','I have to say flying kite still ranked as top 1 on my list of family activities.']
       },
       {
-        title: 'Feeling Lonely',
+        title: 'A Sad Day',
         image: Images.city,
+        date: 'Oct 10',
         color: '#FF5252',
         id: 1,
-        pages:4,
-        grade:'8th',
-        date:"Oct 10th",
-        index: 0,
-        imageSets: [Images.mary1,Images.mary2,Images.mary3,Images.mary4],
-        story: ['So overwhelmed this week...','I almost skipped my workout routine because I was too sleepy.','My cat is all I have now since mom and dad will not be at home recently','I felt lonely sometimes, but can take care of myself.']
       },
       {
-        title: 'Happy Day',
+        title: 'Feeling Down',
         image: Images.desk,
+        date: 'Oct 9',
         color: '#A29BFE',
         id: 1,
-        pages:4,
-        grade:'8th',
-        date:"Oct 12th",
-        index: 0,
-        imageSets: [Images.dante1,Images.dante2,Images.dante3,Images.dante4],
-        story: ['This morning we got an entire class period for reading books!','story2','story3','story4']
       },
     ]
   }
@@ -69,7 +48,7 @@ export default class MyStoriesScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Browse Stories</Text>
+        <Text style={styles.title}>My Stories</Text>
         <View style={styles.buttonRow}>
           <TouchableOpacity onPress={this.changeCategory} style={styles.button}>
             <Text style={styles.buttonText}>All</Text>
@@ -89,10 +68,9 @@ export default class MyStoriesScreen extends React.Component {
               <View style={styles.storyView}>
                 <StoryCard
                   title={item.title}
-                  image={item.image}
-                  color={item.color}
                   onStoryPress={this.onStoryPress.bind(this,item)}
-                  />
+                  image={item.image}
+                  color={item.color}/>
                 <Text style={styles.dateText}>{item.date}</Text>
               </View>
             }

@@ -39,7 +39,7 @@ export default class MyStoryDetailsScreen extends React.Component {
           <TouchableOpacity onPress={() => this.props.navigation.navigate("ShareStoryScreen",this.props.navigation.state.params)} style={[styles.button, {backgroundColor: this.props.navigation.state.params.color}]}>
             <Text style={styles.buttonText}>Share Story</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.onReadStory} style={[styles.button, {backgroundColor: this.props.navigation.state.params.color}]}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate("ReadMyStoriesScreen",this.props.navigation.state.params)} style={[styles.button, {backgroundColor: this.props.navigation.state.params.color}]}>
             <Text style={styles.buttonText}>Read Story</Text>
           </TouchableOpacity>
         </View>
