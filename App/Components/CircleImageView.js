@@ -5,7 +5,7 @@ import Metrics from '../Themes/Metrics';
 
 const CircleImageView = (props) => {
   return(
-    <View style={styles.circleView}>
+    <View style={[styles.circleView, {backgroundColor: props.color}]}>
       <Image
         source={props.source}
         resizeMode={'cover'}
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: (Metrics.screenWidth / 2)*0.5,
-    height: (Metrics.screenWidth / 2)*0.5,
+    height: (Metrics.screenWidth / 2)*0.55,
   }
 });
 

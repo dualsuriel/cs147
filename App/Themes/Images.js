@@ -27,6 +27,10 @@ const Images = {
   dante2: require('../Images/Dante1.jpg'),
   dante3: require('../Images/Dante2.jpg'),
   dante4: require('../Images/Dante3.jpg'),
+  me1: require('../Images/Me0.jpg'),
+  me2: require('../Images/Me1.jpg'),
+  me3: require('../Images/Me2.jpg'),
+  me4: require('../Images/Me3.jpg'),
 }
 
 export default Images;

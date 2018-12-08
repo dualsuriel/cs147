@@ -14,30 +14,35 @@ export default class ShareStoryScreen extends React.Component {
       {
         image: Images.dad,
         name: 'Dad',
+        color: '#0984E3',
         key: 0
       },
       {
         image: Images.mom,
         name: 'Mom',
+        color: '#5CBD9B',
         key: 1
       },
       {
         image: Images.uncle,
         name: 'Uncle',
+        color: '#f39c12',
         key: 2
       },
       {
         image: Images.aunt,
         name: 'Aunt',
+        color: '#FF5252',
         key: 3
       }
     ]
   }
 
-  displayPopup() {
+  displayPopup(name) {
+    const title = this.props.navigation.state.params.title;
     Alert.alert(
       'Story Shared!',
-      'You shared A Fun Day at School with Dad!',
+      "You shared " + title + " with " + name + "!",
       [
         {text: 'Great!', onPress: () => console.log('Ask me later pressed')},
       ],
@@ -66,10 +71,11 @@ export default class ShareStoryScreen extends React.Component {
             numColumns={2}
             style={styles.contactList}
             renderItem={({item}) =>
-              <TouchableOpacity onPress={this.displayPopup}>
+              <TouchableOpacity onPress={() => this.displayPopup(item.name)}>
                 <View style={styles.contactView}>
                   <CircleImageView
                     source={item.image}
+                    color={item.color}
                   />
                   <Text style={styles.contactText}>{item.name}</Text>
                 </View>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
-
 import Images from '../Themes/Images';
 
 import StoryHeader from '../Components/StoryHeader';
@@ -24,8 +23,8 @@ export default class MyStoriesScreen extends React.Component {
         story: ['Today in class, we had a discussion about what career we would like to choose in future.','I have always been very interested in the universe, including but limited to planets, star, sun and black hole.','Maybe I could become an astronaut? I do not know, but I will make my best effort.','Dream big!']
       },
       {
-        title: 'Keep My Head Up',
-        image: Images.park,
+        title: 'Writing Partner',
+        image: Images.desk,
         color: '#0984E3',
         id: 1,
         pages:4,
@@ -33,10 +32,10 @@ export default class MyStoriesScreen extends React.Component {
         date:"Oct 10th",
         index: 0,
         imageSets: [Images.kate1,Images.kate2,Images.kate3,Images.kate4],
-        story: ['Thought things have been tough for the past few weeks, but finally we got to sit down together again watching our favorite TV show. Cheers to mom, dad and my brother Brian!','We decided to go out somewhere as we got bored at home.','We went to a park where we could play volleyball. Dad was so good at volleyball. ','I have to say flying kite still ranked as top 1 on my list of family activities.']
+        story: ['I probably need a partner for my writing class.','I was too impatient to proofread my last assignment','Working with a partner would be much more fun.','Writing is supposed be fun rather than painful.']
       },
       {
-        title: 'Feeling Lonely',
+        title: 'Fly to the Moon',
         image: Images.city,
         color: '#FF5252',
         id: 1,
@@ -48,7 +47,7 @@ export default class MyStoriesScreen extends React.Component {
         story: ['So overwhelmed this week...','I almost skipped my workout routine because I was too sleepy.','My cat is all I have now since mom and dad will not be at home recently','I felt lonely sometimes, but can take care of myself.']
       },
       {
-        title: 'Happy Day',
+        title: 'Rockstar Painter',
         image: Images.desk,
         color: '#A29BFE',
         id: 1,

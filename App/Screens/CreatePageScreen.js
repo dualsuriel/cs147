@@ -36,7 +36,7 @@ export default class CreateStoryScreen extends React.Component {
 
   onFinishStory() {
     const currStory = this.props.navigation.state.params.story;
-    this.props.navigation.push("FinishPageScreen", {
+    this.props.navigation.push("FinishedStoryScreen", {
       story: currStory,
     });
   }

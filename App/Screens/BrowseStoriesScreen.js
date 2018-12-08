@@ -19,7 +19,7 @@ export default class BrowseStoriesScreen extends React.Component {
         id: 0,
         pages:4,
         grade:'7th',
-        date:"Oct 12th",
+        date:"Oct 12",
         index: 0,
         imageSets: [Images.mark1,Images.mark2,Images.mark3,Images.mark4],
         story: ['This morning we got an entire class period for reading books!','I love reading. But reading alone was a bit lonely.','Jacob came to me and asked if I would like to read a book about craft with him.','We had lots of fun from reading the book and making crafts together!']
@@ -32,7 +32,7 @@ export default class BrowseStoriesScreen extends React.Component {
         id: 1,
         pages:4,
         grade:'8th',
-        date:"Oct 10th",
+        date:"Oct 10",
         index: 0,
         imageSets: [Images.kate1,Images.kate2,Images.kate3,Images.kate4],
         story: ['Thought things have been tough for the past few weeks, but finally we got to sit down together again watching our favorite TV show. Cheers to mom, dad and my brother Brian!','We decided to go out somewhere as we got bored at home.','We went to a park where we could play volleyball. Dad was so good at volleyball. ','I have to say flying kite still ranked as top 1 on my list of family activities.']
@@ -45,7 +45,7 @@ export default class BrowseStoriesScreen extends React.Component {
         id: 1,
         pages:4,
         grade:'8th',
-        date:"Oct 10th",
+        date:"Oct 10",
         index: 0,
         imageSets: [Images.mary1,Images.mary2,Images.mary3,Images.mary4],
         story: ['So overwhelmed this week...','I almost skipped my workout routine because I was too sleepy.','My cat is all I have now since mom and dad will not be at home recently','I felt lonely sometimes, but can take care of myself.']
@@ -58,7 +58,7 @@ export default class BrowseStoriesScreen extends React.Component {
         id: 1,
         pages:4,
         grade:'8th',
-        date:"Oct 12th",
+        date:"Oct 12",
         index: 0,
         imageSets: [Images.dante1,Images.dante2,Images.dante3,Images.dante4],
         story: ['This morning we got an entire class period for reading books!','story2','story3','story4']

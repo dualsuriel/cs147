@@ -18,17 +18,17 @@ export default class BrowseStoryDetailsScreen extends React.Component {
       imageSets:this.props.navigation.getParam("imageSets"),
       story: this.props.navigation.getParam("story")
     }
-    this.nextStory =this.nextStory.bind(this);
+    this.nextStory = this.nextStory.bind(this);
     this.onFinishReading = this.onFinishReading.bind(this)
     this.currentPageIndexText = this.currentPageIndex+"/4";
   };
 
   nextStory(){
-    this.props.navigation.push("ReadOthersStoriesScreen",this.state);
+    this.props.navigation.push("ReadStoryScreen",this.state);
   }
 
   onFinishReading(){
-    this.props.navigation.popToTop();
+    this.props.navigation.navigate('AddCommentScreen', this.state);
   }
 
   render() {
@@ -46,7 +46,7 @@ export default class BrowseStoryDetailsScreen extends React.Component {
           image={this.props.navigation.state.params.image}
           />
         <View style={styles.storyContainer}>
-          <Text style={styles.storyText}> {this.state.story[this.curIdx]} </Text>
+          <Text style={styles.storyText}>{this.state.story[this.curIdx]}</Text>
           <Image
           source = {this.state.imageSets[this.curIdx]}
           />
@@ -102,6 +102,7 @@ const styles = StyleSheet.create({
   },
   storyText: {
     fontSize: 20,
+    fontWeight: '500',
   },
   numberContainer: {
     marginBottom: 10,

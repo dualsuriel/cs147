@@ -28,7 +28,7 @@ export default class MyStoryDetailsScreen extends React.Component {
   }
 
   onFinishReading(){
-    this.props.navigation.popToTop();
+    this.props.navigation.push("MyStoryDetailsScreen",this.state);
   }
 
   render() {
