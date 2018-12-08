@@ -20,7 +20,7 @@ export default class MyStoriesScreen extends React.Component {
         date:"Oct 12th",
         index: 0,
         imageSets: [Images.me1,Images.me2,Images.me3,Images.me4],
-        story: ['Today in class, we had a discussion about what career we would like to choose in future.','I have always been very interested in the universe, including but limited to planets, star, sun and black hole.','Maybe I could become an astronaut? I do not know, but I will make my best effort.','Dream big!']
+        story: ['Today in class, we had a discussion about what career we would like to choose in future.','I have always been very interested in the universe, including but not limited to planets, star, sun and black hole.','Maybe I could become an astronaut? I do not know, but I will make my best effort.','Dream big!']
       },
       {
         title: 'Writing Partner',
@@ -32,10 +32,10 @@ export default class MyStoriesScreen extends React.Component {
         date:"Oct 10th",
         index: 0,
         imageSets: [Images.kate1,Images.kate2,Images.kate3,Images.kate4],
-        story: ['I probably need a partner for my writing class.','I was too impatient to proofread my last assignment','Working with a partner would be much more fun.','Writing is supposed be fun rather than painful.']
+        story: ['I probably need a partner for my writing class.','I was too impatient to proofread my last assignment','Working with a partner would be much more helpful.','I like writing, but I wish it could be easier for me.']
       },
       {
-        title: 'Fly to the Moon',
+        title: 'Nothing Special',
         image: Images.city,
         color: '#FF5252',
         id: 1,
@@ -44,7 +44,7 @@ export default class MyStoriesScreen extends React.Component {
         date:"Oct 10th",
         index: 0,
         imageSets: [Images.mary1,Images.mary2,Images.mary3,Images.mary4],
-        story: ['So overwhelmed this week...','I almost skipped my workout routine because I was too sleepy.','My cat is all I have now since mom and dad will not be at home recently','I felt lonely sometimes, but can take care of myself.']
+        story: ['Nothing special happened today. But I was in a good mood.','I would have been in a better mood...','...if mom allows me to get a pet.','What I need is companion.']
       },
       {
         title: 'Rockstar Painter',
@@ -56,7 +56,7 @@ export default class MyStoriesScreen extends React.Component {
         date:"Oct 12th",
         index: 0,
         imageSets: [Images.dante1,Images.dante2,Images.dante3,Images.dante4],
-        story: ['This morning we got an entire class period for reading books!','story2','story3','story4']
+        story: ['Painting is the best class I have ever taken.','I recently painted a portrait for my friend, Amy.','She loved my painting so much!','She called me a rockstart painter. How sweet!']
       },
     ]
   }
